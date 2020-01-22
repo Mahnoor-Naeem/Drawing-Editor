@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>my_app</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    
+    <div class="toolbox left">
+        <div class="group commands">
+            <div class="item" data-command="undo" title="Undo">
+                <img src="image/action_undo.png" />
+            </div>
+            <div class="item" data-command="download" title="Download">
+                <img src="image/download.png" />
+            </div>
+        </div>
+        <div class="group shapes">
+            <div class="item active" data-tool="line" title="Line">
+                <img src="image/line.png" />
+            </div>
+            <div class="item" data-tool="circle" title="Circle">
+                <img src="image/circle.png" />
+            </div>
+            <div class="item" data-tool="rectangle" title="Rectangle">
+                <img src="image/rectangle.png" />
+            </div>
+            <div class="item" data-tool="triangle" title="Triangle">
+                <img src="image/triangle.png" />
+            </div>
+        </div>
+        <div class="group tools">
+            <div class="item" data-tool="pencil" title="Pencil">
+                <img src="image/pencil.png" />
+            </div>
+            <div class="item" data-tool="paint_brush" title="paint_brush">
+                <img src="image/paint_brush.png" />
+            </div>
+            <div class="item" data-tool="paint_bucket" title="paint_bucket">
+                <img src="image/paint_bucket.png" />
+            </div>
+            <div class="item" data-tool="eraser" title="Eraser">
+                <img src="image/eraser.png" />
+            </div>
+        </div>
+        <div class="group linewidths">
+            <div class="item active" data-line-width="1" title="1 Pexel">
+                <div class="linewidth" style="width:1px;height:1px;"></div>
+            </div>
+            <div class="item" data-line-width="2" title="2 Pexel">
+                <div class="linewidth" style="width:2px;height:2px;"></div>
+            </div>
+            <div class="item" data-line-width="3" title="3 Pexel">
+                <div class="linewidth" style="width:3px;height:3px;"></div>
+            </div>
+            <div class="item" data-line-width="4" title="4 Pexel">
+                <div class="linewidth" style="width:4px;height:4px;"></div>
+            </div>
+            <div class="item" data-line-width="5" title="5 Pexel">
+                <div class="linewidth" style="width:5px;height:5px;"></div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+    <div class="toolbox right">
+        <div class="group swatches">
+            <div class="item" data-color="#ffffff">
+                <div class="swatche" style="background-color:#ffffff;"></div>
+            </div>
+            <div class="item active" data-color="#000000">
+                <div class="swatche" style="background-color:#000000;"></div>
+            </div>
+            <div class="item" data-color="#ff0000">
+                <div class="swatche" style="background-color:#ff0000;"></div>
+            </div>
+            <div class="item" data-color="#00ff00">
+                <div class="swatche" style="background-color:#00ff00;"></div>
+            </div>
+            <div class="item" data-color="#0000ff">
+                <div class="swatche" style="background-color:#0000ff;"></div>
+            </div>
+            <div class="item" data-color="#00ffff">
+                <div class="swatche" style="background-color:#00ffff;"></div>
+            </div>
+            <div class="item" data-color="#ff00ff">
+                <div class="swatche" style="background-color:#ff00ff;"></div>
+            </div>
+            <div class="item" data-color="#ffff00">
+                <div class="swatche" style="background-color:#ffff00;"></div>
+            </div>
+            <div class="item" data-color="#c46f0f">
+                <div class="swatche" style="background-color:#c46f0f;"></div>
+            </div>
+            <div class="item" data-color="#fd8f27">
+                <div class="swatche" style="background-color:#fd8f27;"></div>
+            </div>
+            <div class="item" data-color="#0099ff">
+                <div class="swatche" style="background-color:#0099ff;"></div>
+            </div>
+            <div class="item" data-color="#ff009d">
+                <div class="swatche" style="background-color:#ff009d;"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
